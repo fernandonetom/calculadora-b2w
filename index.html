@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="src/css/style.css" />
+		<title>Calculadora B2M Marketplace</title>
+	</head>
+	<body>
+		<header>
+			Calculadora B2W
+			<button class="help">Como usar</button>
+		</header>
+		<section id="boxNotice">Preencha todos os campos</section>
+		<section>
+			<div class="inputGroup valorProduto">
+				<label for="valorProduto">Valor do produto: R$</label>
+				<input type="tel" name="valorProduto" id="valorProduto" />
+			</div>
+			<div class="inputGroup valorFrete">
+				<label for="valorFrete">Valor do frete: R$</label>
+				<input type="tel" name="valorFrete" id="valorFrete" />
+			</div>
+			<div class="inputGroup valorTaxa">
+				<label for="valorTaxa">Valor da taxa: %</label>
+				<input type="tel" name="valorTaxa" id="valorTaxa" />
+			</div>
+		</section>
+		<div class="modal">
+			<div class="modalBody">
+				<h1>Como usar</h1>
+				<hr />
+				<ol>
+					<li>Digite o valor do produto que você vendeu</li>
+					<li>Digite o valor do frete que o comprador pagou</li>
+					<li>
+						Digite o valor da taxa negociada, geralmente é 16%
+						<i
+							>(uma vez definida, ficará salva e não precisará colocar
+							novamente, somente se ocorrer uma mudança de sua taxa)</i
+						>
+					</li>
+					<li>O valor será calculado automaticamente.</li>
+				</ol>
+				<div class="modalFooter">
+					<button class="close">Fechar</button>
+				</div>
+			</div>
+		</div>
+		<section id="valorCalculado"></section>
+		<script src="src/js/script.js"></script>
+	</body>
+</html>
