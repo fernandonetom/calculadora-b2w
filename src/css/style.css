@@ -16,6 +16,9 @@ header {
 	justify-content: space-between;
 	align-items: center;
 }
+header h1 {
+	font-size: 20px;
+}
 .help {
 	background-color: #1abc9c;
 	padding: 5px;
